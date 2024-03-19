@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "e48b6671-28cd-4ae5-a611-d91a2315b017",
+		"name": "InventicInterAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33630836",
+		"_collection_link": "https://gold-water-221171.postman.co/workspace/New-Team-Workspace~c2dc2244-9e93-42d6-b0c3-e382b8b81846/collection/33630836-e48b6671-28cd-4ae5-a611-d91a2315b017?action=share&source=collection_link&creator=33630836"
+	},
+	"item": [
+		{
+			"name": "Leads Records",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Imaf",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Food Description",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/leads"
+			},
+			"response": []
+		},
+		{
+			"name": "Save Leads",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "companyid",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "sourceid",
+							"value": "37",
+							"type": "text"
+						},
+						{
+							"key": "statusid",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "agentid",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "salutation",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "clientname",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "clientemail",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/leads/save"
+			},
+			"response": []
+		},
+		{
+			"name": "Proposals Recrods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/proposals"
+			},
+			"response": []
+		},
+		{
+			"name": "Proposals Save ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "leadId",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "validtill",
+							"value": "2024-04-13",
+							"type": "text"
+						},
+						{
+							"key": "total",
+							"value": "15000",
+							"type": "text"
+						},
+						{
+							"key": "subtotal",
+							"value": "15000",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/proposals/save"
+			},
+			"response": []
+		},
+		{
+			"name": "Proposals update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "leadId",
+							"value": "11",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "validtill",
+							"value": "2024-04-15",
+							"type": "text"
+						},
+						{
+							"key": "total",
+							"value": "15000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "subtotal",
+							"value": "15000",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/proposals/update/8720"
+			},
+			"response": []
+		},
+		{
+			"name": "Proposals Delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/proposals/delete/8713"
+			},
+			"response": []
+		}
+	]
+}
